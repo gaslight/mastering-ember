@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'mastering-ember',
+    podModulePrefix: 'mastering-ember/pods',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
