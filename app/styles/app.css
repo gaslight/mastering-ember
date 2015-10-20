@@ -9,3 +9,40 @@ html, body, body > div {
   height: 60px;
 }
 
+.app {
+  height: calc(100% - 60px);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.app__master {
+  width: 400px;
+}
+
+.app__detail {
+  position: relative;
+  width: 100%;
+  border-left: 1px solid #ddd;
+}
+
+.artist-link {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.artist-link:hover {
+  background: #eee;
+}
+
+.artist-link__media {
+  width: 75px;
+  height: 75px;
+  border: 1px solid #ddd;
+  padding: 2px;
+  margin-right: 10px;
+}
+
+.artist-link img {
+  width: 100%;
+}

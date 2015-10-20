@@ -1,0 +1,19 @@
+<div class="app">
+  <div class="app__master">
+    {{#each model as |artist|}}
+      {{#link-to 'artist.show' artist class="artist-link"}}
+        <div class="artist-link__media">
+          <img src="{{artist.thumbnailUrl}}"/>
+        </div>
+
+        <div class="artist-link__body">
+          <h4>{{artist.name}}</h4>
+        </div>
+      {{/link-to}}
+    {{/each}}
+  </div>
+
+  <div class="app__detail">
+    {{outlet}}
+  </div>
+</div>
