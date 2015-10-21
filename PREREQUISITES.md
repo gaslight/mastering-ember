@@ -39,6 +39,8 @@ Execute the node installer at [https://nodejs.org/en/#download](https://nodejs.o
 
 ## 4. Install git
 
-Many machines have git installed by default. If yours does not, please follow the
-[git installation guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+The easiest way to install git is by installing [GitHub Destop](https://desktop.github.com/). Please follow the
+instaltion instructions there.
+
+If you already have git installed and are comfortable with git and, feel free to skip this step.
 
