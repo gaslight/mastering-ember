@@ -1,4 +1,5 @@
 export default function() {
-  this.get('/api/artists');
-  this.get('/api/artists/:id');
+  this.get('/api/artists', function(db) {
+    return { artists: db.artists };
+  });
 }
