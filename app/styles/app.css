@@ -46,3 +46,30 @@ html, body, body > div {
 .artist-link img {
   width: 100%;
 }
+
+.banner {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.banner img {
+  width: 100%
+}
+
+.banner h1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px 15px;
+  color: #fff;
+}
+
+.album-tile {
+  text-align: center;
+}
+
+.album-tile img {
+  width: 100%;
+  padding: 2px;
+  border: 1px solid #ddd;
+}
