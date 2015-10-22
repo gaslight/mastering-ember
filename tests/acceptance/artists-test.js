@@ -2,9 +2,10 @@ import Ember from 'ember';
 import { module, test } from 'qunit';
 import startApp from 'mastering-ember/tests/helpers/start-app';
 
-module('Acceptance | Viewing artists', {
+module('Acceptance | artists.show', {
   beforeEach: function() {
     this.application = startApp();
+    server.create('artist', { id: 1, name: "The Beatles", albums: [2] });
   },
 
   afterEach: function() {
@@ -12,9 +13,7 @@ module('Acceptance | Viewing artists', {
   }
 });
 
-test('visiting /', function(assert) {
-  server.create('artist', { name: "The Beatles" });
-
+test('Viewing the artists list', function(assert) {
   visit('/');
 
   andThen(function() {
