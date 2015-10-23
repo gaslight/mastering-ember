@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  {{#each model as |album|}}
+    <div class="row">
+      <div class="col-md-3">
+        <div class="album-tile">
+          <img src="{{album.artworkUrl}}"/>
+        </div>
+      </div>
+
+      <div class="col-md-9">
+        <h4>{{album.name}}</h4>
+
+        <table class="table">
+          <tbody>
+            {{#each album.tracks as |track|}}
+              <tr>
+                <td><a>{{track.sequence}}</a></td>
+                <td><a>{{track.name}}</a></td>
+                <td><a href="{{track.audioUrl}}">{{track.audioUrl}}</a></td>
+                <td><a>{{track.duration}}</a></td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  {{/each}}
+</div>

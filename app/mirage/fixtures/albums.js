@@ -3,7 +3,8 @@ export default [
     id: 1,
     artist: 1,
     name: "Kind of Blue",
-    artworkUrl: "/images/albums/miles-davis-kind-of-blue.jpg"
+    artworkUrl: "/images/albums/miles-davis-kind-of-blue.jpg",
+    tracks: [1, 2, 3, 4, 5]
   },
   {
     id: 2,
