@@ -1,7 +1,7 @@
 import Ember from 'ember';
 import QUnit from 'qunit';
 
-export function waitFor(object, property, callback) {
+export default function(object, property, callback) {
   QUnit.stop();
 
   return new Ember.RSVP.Promise(function(resolve, reject) {

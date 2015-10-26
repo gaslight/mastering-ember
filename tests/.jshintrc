@@ -1,5 +1,6 @@
 {
   "predef": [
+    "assertElementExists",
     "HTMLElement",
     "clearTimeout",
     "server",

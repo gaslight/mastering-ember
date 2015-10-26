@@ -15,11 +15,11 @@ module('Acceptance | Viewing an album', {
   }
 });
 
-test('Viewing the albums list', function(assert) {
+test('Viewing the albums list', function() {
   visit("/artists/1");
 
   andThen(function() {
-    assert.equal(find("td:contains('Come Together')").length, 1);
+    assertElementExists("td:contains('Come Together')");
   });
 });
 

@@ -14,12 +14,12 @@ module('Acceptance | Viewing an artist', {
   }
 });
 
-test('Viewing the albums list', function(assert) {
+test('Viewing the albums list', function() {
   visit("/artists/1");
 
   andThen(function() {
-    assert.equal(find("img[src='/fixtures/test-artwork.jpg']").length, 1);
-    assert.equal(find("h4:contains('Abbey Road')").length, 1);
+    assertElementExists("img[src='/fixtures/test-artwork.jpg']");
+    assertElementExists("h4:contains('Abbey Road')");
   });
 });
 

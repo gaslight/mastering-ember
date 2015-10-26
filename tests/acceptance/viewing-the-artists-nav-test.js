@@ -13,10 +13,10 @@ module('Acceptance | Viewing the artists nav', {
   }
 });
 
-test('Viewing the artists list', function(assert) {
+test('Viewing the artists list', function() {
   visit('/');
 
   andThen(function() {
-    assert.equal(find("a:contains('The Beatles')").length, 1);
+    assertElementExists("a:contains('The Beatles')");
   });
 });
