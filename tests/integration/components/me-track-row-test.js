@@ -1,7 +1,7 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 import Ember from 'ember';
-import { waitFor } from '../../../../assertions';
+import { waitFor } from '../../assertions';
 
 let testTrack = Ember.Object.create({ name: "So What", audioUrl: '/fixtures/test-audio.mp3' });
 

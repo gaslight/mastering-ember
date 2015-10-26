@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 import Ember from 'ember';
-import { waitFor } from '../../../assertions';
+import { waitFor } from '../../assertions';
 
 let testTrack = Ember.Object.create({ audioUrl: '/fixtures/test-audio.mp3', duration: 60 });
 
