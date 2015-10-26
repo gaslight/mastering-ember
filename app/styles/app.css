@@ -102,3 +102,21 @@ a, a:focus {
   color: #444;
   font-size: 24px;
 }
+
+@keyframes sk-scaleout {
+  0% {
+    transform: scale(0);
+  } 100% {
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  margin: 30px auto;
+  background-color: #30B6CC;
+  border-radius: 100%;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
