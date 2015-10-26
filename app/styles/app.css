@@ -3,10 +3,12 @@ html, body, body > div {
 }
 
 .control-bar {
-  padding: 10px;
   border-bottom: 1px solid #ddd;
-  box-shadow: 0 0 1px #ccc;
-  height: 60px;
+  box-shadow: 0 0 1px #ddd;
+}
+
+.logo {
+  margin: 10px 0;
 }
 
 .app {
@@ -16,7 +18,7 @@ html, body, body > div {
 }
 
 .app__master {
-  width: 400px;
+  width: 25%;
 }
 
 .app__detail {
@@ -72,4 +74,36 @@ html, body, body > div {
   width: 100%;
   padding: 2px;
   border: 1px solid #ddd;
+}
+
+.now-playing {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  background: #eee;
+}
+
+.now-playing-thumnail {
+  width: 65px;
+  height: 65px;
+  padding: 2px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  float: left;
+}
+
+.now-playing-placeholder {
+  text-align: center;
+  padding: 22px 0;
+  margin: 0;
+}
+
+.now-playing .player-control {
+  padding: 20px;
+}
+
+.player-control {
+  background: none;
+  border: none;
+  color: #444;
+  font-size: 24px;
 }
