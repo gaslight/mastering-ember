@@ -1,7 +1,8 @@
 import Ember from 'ember';
+import QUnit from 'qunit';
 
 export function waitFor(object, property, callback) {
-  stop();
+  QUnit.stop();
 
   return new Ember.RSVP.Promise(function(resolve, reject) {
     function observer() {
@@ -12,7 +13,7 @@ export function waitFor(object, property, callback) {
       }
 
       Ember.run.next(function() {
-        start();
+        QUnit.start();
         resolve();
       });
     }
@@ -20,7 +21,7 @@ export function waitFor(object, property, callback) {
     Ember.addObserver(object, property, observer);
 
     var timeout = setTimeout(function() {
-      start();
+      QUnit.start();
       QUnit.push(false, null, null, "Timed out waiting for " + property + " of " + object + " to become truthy");
       Ember.run(function() {
         reject();

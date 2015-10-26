@@ -1,5 +1,7 @@
 {
   "predef": [
+    "HTMLElement",
+    "clearTimeout",
     "server",
     "document",
     "window",

@@ -13,12 +13,7 @@
         <table class="table">
           <tbody>
             {{#each album.tracks as |track|}}
-              <tr>
-                <td><a>{{track.sequence}}</a></td>
-                <td><a>{{track.name}}</a></td>
-                <td><a href="{{track.audioUrl}}">{{track.audioUrl}}</a></td>
-                <td><a>{{me-duration track.duration}}</a></td>
-              </tr>
+              {{me-track-row track=track}}
             {{/each}}
           </tbody>
         </table>
