@@ -2,7 +2,7 @@ import { moduleFor, test } from 'ember-qunit';
 import Ember from 'ember';
 import { waitFor } from '../../../assertions';
 
-let testTrack = Ember.Object.create({ audioUrl: '/artists/miles-davis/kind-of-blue/01-so-what.mp3', duration: 60 });
+let testTrack = Ember.Object.create({ audioUrl: '/fixtures/test-audio.mp3', duration: 60 });
 
 moduleFor('service:player', 'Unit | Service | player', {});
 
