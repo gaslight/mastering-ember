@@ -2,7 +2,7 @@ import Ember from 'ember';
 import { module, test } from 'qunit';
 import startApp from 'mastering-ember/tests/helpers/start-app';
 
-module('Acceptance | artists.show', {
+module('Acceptance | Viewing an artist', {
   beforeEach: function() {
     this.application = startApp();
     server.create('artist', { id: 1, name: "The Beatles", albums: [2] });
