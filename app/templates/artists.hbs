@@ -1,7 +1,7 @@
 <div class="app">
   <div class="app__master">
     {{#each model as |artist|}}
-      {{#link-to 'artist.show' artist class="artist-link"}}
+      {{#link-to 'artists.show' artist class="artist-link"}}
         <div class="artist-link__media">
           <img src="{{artist.thumbnailUrl}}"/>
         </div>
