@@ -19,7 +19,7 @@ test('Viewing the albums list', function(assert) {
   visit("/artists/1");
 
   andThen(function() {
-    assert.equal(find("a:contains('Come Together')").length, 1);
+    assert.equal(find("td:contains('Come Together')").length, 1);
   });
 });
 

@@ -1,43 +1,36 @@
-html, body, body > div {
-  height: 100%;
+a, a:focus {
+  color: #30B6CC;
+  text-decoration: none;
 }
 
 .control-bar {
-  border-bottom: 1px solid #ddd;
-  box-shadow: 0 0 1px #ddd;
+  background: #1E717F;
+  min-height: 85px;
 }
 
 .logo {
-  margin: 10px 0;
-}
-
-.app {
-  min-height: calc(100% - 60px);
-  display: flex;
-  justify-content: flex-start;
-}
-
-.app__master {
-  width: 25%;
-}
-
-.app__detail {
-  position: relative;
-  width: 100%;
-  border-left: 1px solid #ddd;
+  margin: 20px 0;
+  color: #fff;
 }
 
 .artist-link {
   display: flex;
   justify-content: flex-start;
   padding: 10px;
+  margin: 0 -15px;
 }
 
 .artist-link:hover {
-  background: #eee;
+  background: #f1f1f1;
+  text-decoration: none;
 }
 
-.artist-link__media {
+.artist-link.active {
+  background: #30B6CC;
+  color: #fff;
+}
+
+.artist-link img {
   width: 75px;
   height: 75px;
   border: 1px solid #ddd;
@@ -45,13 +38,9 @@ html, body, body > div {
   margin-right: 10px;
 }
 
-.artist-link img {
-  width: 100%;
-}
-
 .banner {
   position: relative;
-  margin-bottom: 15px;
+  margin: 0 -15px 15px -15px;
 }
 
 .banner img {
@@ -66,35 +55,40 @@ html, body, body > div {
   color: #fff;
 }
 
-.album-tile {
-  margin-bottom: 15px
+.album-row {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f1f1f1;
 }
 
-.album-tile img {
+.album-row img {
   width: 100%;
   padding: 2px;
   border: 1px solid #ddd;
 }
 
-.now-playing {
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  background: #eee;
+.track-row:hover {
+  cursor: pointer;
+  background: #f1f1f1;
 }
 
-.now-playing-thumnail {
+.track-row.playing td {
+  background: #30B6CC;
+  color: #fff;
+}
+
+.now-playing {
+  margin: 10px 0;
+  border-radius: 3px;
+  background: #fff;
+}
+
+.now-playing img {
   width: 65px;
   height: 65px;
   padding: 2px;
-  border: 1px solid #ddd;
   margin-right: 10px;
   float: left;
-}
-
-.now-playing-placeholder {
-  text-align: center;
-  padding: 22px 0;
-  margin: 0;
 }
 
 .now-playing .player-control {
@@ -104,6 +98,7 @@ html, body, body > div {
 .player-control {
   background: none;
   border: none;
+  outline: none;
   color: #444;
   font-size: 24px;
 }

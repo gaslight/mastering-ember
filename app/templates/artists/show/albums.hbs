@@ -1,10 +1,8 @@
 <div class="container-fluid">
   {{#each model as |album|}}
-    <div class="row">
+    <div class="row album-row">
       <div class="col-md-3">
-        <div class="album-tile">
-          <img src="{{album.artworkUrl}}"/>
-        </div>
+        <img src="{{album.artworkUrl}}"/>
       </div>
 
       <div class="col-md-9">

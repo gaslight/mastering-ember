@@ -1,19 +1,15 @@
-<div class="app">
-  <div class="app__master">
+<div class="row">
+  <div class="col-md-3">
     {{#each model as |artist|}}
       {{#link-to 'artists.show' artist class="artist-link"}}
-        <div class="artist-link__media">
-          <img src="{{artist.thumbnailUrl}}"/>
-        </div>
+        <img src="{{artist.thumbnailUrl}}"/>
 
-        <div class="artist-link__body">
-          <h4>{{artist.name}}</h4>
-        </div>
+        <h4>{{artist.name}}</h4>
       {{/link-to}}
     {{/each}}
   </div>
 
-  <div class="app__detail">
+  <div class="col-md-9">
     {{outlet}}
   </div>
 </div>

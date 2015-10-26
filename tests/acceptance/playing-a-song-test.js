@@ -17,7 +17,8 @@ module('Acceptance | Playing a Song', {
 
 test('Viewing the albums list', function(assert) {
   visit("/artists/1");
-  click("a:contains('Come Together')");
+
+  click("tr:contains('Come Together')");
 
   andThen(function() {
     assert.equal(find(".now-playing:contains('Come Together')").length, 1);
