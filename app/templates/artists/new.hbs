@@ -1,1 +1,16 @@
-This is where the form to create a new artist goes.
+<form>
+  <div class="form-group">
+    <label>Name</label>
+    {{input class='form-control' value=model.name}}
+  </div>
+  <div class="form-group">
+    <label>Banner URL</label>
+    {{input class='form-control' value=model.bannerUrl}}
+  </div>
+  <div class="form-group">
+    <label>Thumbnail URL</label>
+    {{input class='form-control' value=model.thumbnailUrl}}
+  </div>
+
+  <button {{action "create"}}>Create</button>
+</form>
