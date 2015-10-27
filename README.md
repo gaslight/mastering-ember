@@ -47,3 +47,7 @@ the terminal.
     > git --version
     git version 2.x.x
 
+## 5. Install Chrome
+
+For this course, we'll be using the [Google Chrome](https://www.google.com/chrome/browser/) browser and the
+[Ember Inspector](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi?hl=en).
