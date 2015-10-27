@@ -1,5 +1,8 @@
 {
   "predef": [
+    "assertElementExists",
+    "HTMLElement",
+    "clearTimeout",
     "server",
     "document",
     "window",
