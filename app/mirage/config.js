@@ -23,4 +23,5 @@ export default function() {
   });
 
   this.post('/api/artists');
+  this.post('/api/albums');
 }
