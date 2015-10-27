@@ -1,53 +1,49 @@
-# Mastering-ember
+# Mastering Ember
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+# Prerequisites
 
-## Prerequisites
+During the Mastering Ember course, we'll be using [ember-cli](http://www.ember-cli.com/) to develop our Ember
+application. We'll also be using [git](git-scm.com) to maintain our source code. This will walk you through installing
+Node, ember-cli and bower and git.
 
-You will need the following things properly installed on your computer.
+## 1. Install Node
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+### on OSX
 
-## Installation
+The best way to install node on OSX is via [homebrew](http://brew.sh/). Install homebrew and run:
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+    brew install node
 
-## Running / Development
+### on Windows
 
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+Execute the node installer at [https://nodejs.org/en/#download](https://nodejs.org/en/#download)
 
-### Code Generators
+## 2. Install ember-cli
 
-Make use of the many generators for code, try `ember help generate` for more details
+    npm install -g ember-cli
 
-### Running Tests
+## 3. Install bower
 
-* `ember test`
-* `ember test --server`
+    npm install -g bower
 
-### Building
+## 4. Install git
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+If you already have git installed and are comfortable with git and, feel free to skip this step.
 
-### Deploying
+The easiest way to install git is by installing [GitHub Destop](https://desktop.github.com/). Please follow the
+installation instructions there.
 
-Specify what it takes to deploy your app.
 
-## Further Reading / Useful Links
+To check that the necessary packages are installed, you should see the following output (or something similar) in
+the terminal.
 
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+    > ember --version
+    version: 1.13.8
+    ...
+
+    > bower --version
+    1.x.x
+
+    > git --version
+    git version 2.x.x
 
