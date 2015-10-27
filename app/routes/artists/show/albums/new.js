@@ -10,8 +10,10 @@ export default Ember.Route.extend({
       var album = this.store.createRecord("album", this.currentModel)
       var artist = this.modelFor('artists.show');
       album.set("artist", artist);
-      album.save( (album) =>{
-        this.transitionTo("artists.show", artist);
+      album.save().then( (album) =>{
+        this.send("albumCreated");
+      }, (error) => {
+        console.log(error);
       });
     }
   }
