@@ -21,7 +21,7 @@ test('Vising the artists url', function() {
   andThen(function() {
     assertElementExists(".album-row img[src='/fixtures/test-artwork.jpg']");
     assertElementExists("table.table td:contains('Come Together')");
-    assertElementExists("table.table td:contains('123')");
+    assertElementExists("table.table td:contains('2:03')");
   });
 });
 
