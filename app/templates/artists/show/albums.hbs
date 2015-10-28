@@ -11,11 +11,7 @@
         <table class="table">
           <tbody>
             {{#each album.tracks as |track|}}
-              <tr>
-                <td>{{track.sequence}}</td>
-                <td>{{track.name}}</td>
-                <td>{{me-duration track.duration}}</td>
-              </tr>
+              {{me-track-row track=track}}
             {{/each}}
           </tbody>
         </table>
