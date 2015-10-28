@@ -72,6 +72,10 @@ a, a:focus {
   background: #f1f1f1;
 }
 
+.track-row td {
+  min-width: 40px;
+}
+
 .track-row.playing td {
   background: #30B6CC;
   color: #fff;
