@@ -1,6 +1,7 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 import Ember from 'ember';
+import waitFor from 'mastering-ember/tests/helpers/wait-for';
 
 let testTrack = Ember.Object.create({ name: "So What", audioUrl: '/fixtures/test-audio.mp3' });
 
@@ -15,6 +16,7 @@ test('rendering the track name', function(assert) {
 });
 
 test('clicking a track row', function(assert) {
+  let player = this.container.lookup('service:player');
   this.set('testTrack', testTrack);
   this.render(hbs`{{me-track-row track=testTrack}}`);
 
@@ -22,4 +24,8 @@ test('clicking a track row', function(assert) {
   this.$('.track-row').click();
   assert.ok(this.$('.track-row').hasClass('playing'), "clicking adds the `playing` class");
   assert.ok(this.$('.glyphicon.glyphicon-volume-up').length, "clicking adds a speaker icon");
+
+  waitFor(player, 'isPlaying', function() {
+    assert.deepEqual(player.get('track'), testTrack);
+  });
 });
