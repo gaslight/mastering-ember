@@ -1,13 +1,18 @@
 import Ember from 'ember';
+let { inject, computed } = Ember;
 
 export default Ember.Component.extend({
   tagName: 'tr',
   classNames: ['track-row'],
   classNameBindings: ['isPlaying:playing'],
 
-  isPlaying: false,
+  player: inject.service(),
+
+  isPlaying: computed('player.track', 'track', function() {
+    return this.get('player.track') === this.get('track');
+  }),
 
   click() {
-    this.toggleProperty('isPlaying');
+    this.get('player').play(this.get('track'));
   }
 });
