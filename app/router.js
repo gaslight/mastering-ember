@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('artists', { path: "/" }, function() {
     this.route('show', { path: "artists/:id" }, function() {
       this.route('albums', { path: "/" });
+      this.route('newAlbum', { path: "albums/new" });
     });
   });
 });

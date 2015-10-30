@@ -1,4 +1,8 @@
 <div class="container-fluid">
+  <div class="text-right">
+    {{#link-to "artists.show.newAlbum" class="btn btn-default"}}Add New{{/link-to}}
+  </div>
+
   {{#each model as |album|}}
     <div class="row album-row">
       <div class="col-md-3">
