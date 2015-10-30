@@ -20,4 +20,6 @@ export default function() {
       tracks: db.tracks.filter((track) => albumIds.contains(track.album))
     };
   });
+
+  this.post('/api/albums');
 }
