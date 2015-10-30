@@ -2,12 +2,13 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return {};
+    return this.store.createRecord("artist");
   },
 
   actions: {
-    create() {
-      this.store.createRecord("artist", this.currentModel).save( (artist) =>{
+    create(model) {
+      model.save().then((artist) => {
+        this.send("refreshArtists");
         this.transitionTo("artists.show", artist);
       });
     }
