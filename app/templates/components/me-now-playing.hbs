@@ -1,0 +1,16 @@
+{{#if track}}
+  <div class="row">
+    <div class="col-md-9 col-xs-9">
+      <img src="{{track.album.artworkUrl}}">
+      <h5>{{track.album.name}} - {{track.name}}</h5>
+      <p>{{me-duration player.remainingTime}}</p>
+    </div>
+    <div class="col-md-3 col-xs-3 text-right">
+      {{#if player.isPlaying}}
+        <button {{action 'pause'}} class="player-control glyphicon glyphicon-pause"></button>
+      {{else}}
+        <button {{action 'resume'}} class="player-control glyphicon glyphicon-play"></button>
+      {{/if}}
+    </div>
+  </div>
+{{/if}}
